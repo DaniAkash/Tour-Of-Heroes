@@ -16,11 +16,8 @@
 .settings/
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode
+typings
 
 # misc
 /.sass-cache
@@ -38,3 +35,6 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+#yarn
+yarn.lock
