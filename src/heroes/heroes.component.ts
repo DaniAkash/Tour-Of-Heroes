@@ -5,12 +5,12 @@ import { Hero } from '../common/hero';
 import { HeroService } from '../services/hero.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-my-heroes',
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css'],
   providers: [HeroService]
 })
-export class AppComponent implements OnInit {
+export class HeroesComponent implements OnInit {
   title = 'Tour of Heroes';
   selectedHero: Hero;
   heroes: Hero[];
