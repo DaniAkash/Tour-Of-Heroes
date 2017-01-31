@@ -8,7 +8,6 @@ import { HeroService } from '../services/hero.service';
   selector: 'app-my-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  providers: [HeroService]
 })
 export class HeroesComponent implements OnInit {
   title = 'Tour of Heroes';
@@ -23,9 +22,7 @@ export class HeroesComponent implements OnInit {
 
   getHeroes(): void {
     this.heroService.getHeroes()
-      .then(heroes => {
-        this.heroes = heroes;
-      });
+      .then(heroes => this.heroes = heroes);
   }
 
   onSelect(hero: Hero): void {
